@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  overflow-y: scroll;
+}
+.head {
+  margin-top: 50px;
+}
+.head h1{
+  margin: 10px 0;
+}
+.guessDiv .guessedWord {
+  height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto 100px auto;
+}
+.guessDiv .guessedWord span {
+  height: 40px;
+  width: 40px;
+  font-size: 35px;
+  text-align: center;
+  position: relative;
+  margin: 10px;
+}
+.guessDiv .guessedWord span::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  top: 100%;
+  left: 0;
+}
+.guessDiv .alphabet span{
+  background: grey;
+  color: white;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  width: 40px;
+  font-size: 22px;
+  text-align: center;
+  margin: 5px;
+  cursor: pointer;
+}
